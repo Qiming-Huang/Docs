@@ -21,6 +21,7 @@ Record commands
 	```
 	* change `https` to `git`, that is `git clone git://github.com/Thomaszz4/Thomaszz4.github.io.git`
 	* if you using `git clone git://github.com/Thomaszz4/Thomaszz4.github.io.git`, when you `git push` may met some problems
+	* new branch: `git branch new_branch`, push the current branch and set the remote as upstream: `git push --set-upstream origin test_branch`
 
 * jupyter
 	* set up a remote connect
@@ -49,6 +50,23 @@ Record commands
 	* Using ufw (Uncomplicated Firewall)
 		* check state of ports: `ufw status`
 		* open port: `ufw open 1234` and `ufw reload`
+
+* vim
+	* vim has three modes, `Insert Mode`, `Visual Mode`, `Command Mode`
+	* command reference:
+		* vertical spilt: in the command mode `:vsplit test1.txt` will split the screen
+		* copy: `y`
+		* cut a line: `dd`, you can then paste
+		* paste: `p`
+	* search operations
+		* in the command mode, `/linux` to search linux, then use `n` to switch to the next one and `b` to the below one.
+		* if you are in the bottom of the file, you can use `?linux`
+	* customize search
+		* highlight search: in the command mode, `:set hlsearch`
+		* search ignoring case-sensitive: `:set ignorecase`
+
+
+
 
 
 
