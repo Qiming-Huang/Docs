@@ -75,3 +75,5 @@ a.__test2()
 ```
 
 * in python, `""` and `''` are same, but it's usful when `"This is 'my' book"`
+
+* python module: tdqm （taqaddum） -> used for Task completion bar

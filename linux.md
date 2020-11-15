@@ -58,12 +58,19 @@ Record commands
 		* copy: `y`
 		* cut a line: `dd`, you can then paste
 		* paste: `p`
+		* `h` left, `l` right, `j` down, `k` up
+		* `0` the start of this line, `$` the end of this line
+		* `gg` go to the first line of the file, `G` go to the end of the file, `no of line G` to the the specific line (for example `7 G` go to 7 line)
+		* `x` delete current word, `dw` delete all the words after current in this line
+		* `u` undo, `<ctrl> r` cancel undo
+		* execute the external commands: `:!shell ls` for instance
 	* search operations
 		* in the command mode, `/linux` to search linux, then use `n` to switch to the next one and `b` to the below one.
 		* if you are in the bottom of the file, you can use `?linux`
 	* customize search
 		* highlight search: in the command mode, `:set hlsearch`
 		* search ignoring case-sensitive: `:set ignorecase`
+
 
 
 
