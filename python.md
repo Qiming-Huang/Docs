@@ -1,5 +1,24 @@
 #Python
 
+## Moudle
+* python module: tdqm （taqaddum） -> used for Task completion bar
+* python module: random
+	* get a random number from (0,1): `random.random()`
+	* choose one random choice from a list:
+```python
+a = [1,2,3,4,5]
+random.choice(a)
+# 2
+```
+	* choose k random choices from a list:
+```python
+b = [3,4,1,2,3,7]
+random.choices(b, k=3)
+# [3,3,2]
+```
+
+## Other usage
+
 * `if __name__ == '__main__':` 
 	```
 	---test1.py
@@ -23,57 +42,21 @@
 	```
 	* hence, the `if __name__ == '__main__':` is used for import things, if execute it directly, it will execute the whole thing, but if we import it and execute, if will not execute the codes below `if __name__ == '__main__':`
 
-* when you defined a function in a class named `__build_network`, that means it is a private method of class, the other modules could not access, for example:
+* when you defined a function in a class named `__build_network`, that means it is a private method of class, the other modules could not access, for example: ...
+
+## Class
 ```python
-from test1 import test
-a = test
+class Persion:
+    def __init__(self, name='Persion'):
+        self.name = name
+class Puple(Persion):
+    pass
+class Puple_Init(Persion):
+    def __init__(self, age):
+        self.age = age
+class Puple_Super(Persion):
+    def __init__(self, name, age):
+        self.age = age
+        super().__init__(name)
 ```
-
-
-```python
-a.test1()
-```
-
-    this is a test 1
-
-
-
-```python
-a.__test2()
-```
-
-
-    ---------------------------------------------------------------------------
-
-    AttributeError                            Traceback (most recent call last)
-
-    <ipython-input-17-44ad9b8e385b> in <module>
-    ----> 1 a.__test2()
-    
-
-    AttributeError: type object 'test' has no attribute '__test2'
-
-
-
-```python
-# In the test1.py
-```
-
-
-```python
-# class test(object):
-#     def test1():
-#         print('this is a test 1')
-        
-#     def __test2():
-#         print('this is a test2')
-```
-
-
-```python
-#__test2() is a private method of class test1, you can not access from the out side
-```
-
-* in python, `""` and `''` are same, but it's usful when `"This is 'my' book"`
-
-* python module: tdqm （taqaddum） -> used for Task completion bar
+* `super().__init__()`: it was used to inherit the class `Persion` and init the `self.name`
