@@ -45,6 +45,8 @@ Record commands
 	```
 	* `'*'` donates allow all ip to access, add your password got from `jupyter_notebook_config.json` , `4567` specific the port, pay attention, make sure you open the `4567` port.
 	* run, `jupyter notebook`
+	* check kernel list : `jupyter kernelspec list`
+	* install c++ kernel: `conda install xeus-cling -c conda-forge`
 
 * things about ports in linux
 	* Using ufw (Uncomplicated Firewall)
