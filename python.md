@@ -1,5 +1,9 @@
 #Python
 
+## issues
+* `No module named 'pytest'`
+	* check the filename for example, `test_xxx.py` it will happends this problems, try to not use the file name begin with `test_`
+
 ## Moudle
 * python module: tdqm （taqaddum） -> used for Task completion bar
 * python module: random
