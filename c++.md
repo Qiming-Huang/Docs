@@ -19,4 +19,20 @@ cout << p[3];
 	* for example, `int a[] = {1,2,3}`, `sizeof(a)` returns 12, `sizeof(a[0])`returns 4 (because a int cost 4 bits)
 	* return the length of a list `sizeof(a)/sizeof(a[0])`
 
+* Singly Linked List
+a singly linked list contains a head (data and next) 一个是存储数据元素的数据域，另一个是存储下一个结点地址的指针域.
+* 
+```c++
+    struct node {
+        int value;
+        node *next;
+
+        node(int _value) {
+            value = _value;
+        }
+   	};
+```
+		* `node *next` defined a struc pointer `next` points to the address of the next struc.
+
+
 

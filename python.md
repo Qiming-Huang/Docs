@@ -9,6 +9,9 @@
 * python module: random
 	* get a random number from (0,1): `random.random()`
 	* choose one random choice from a list:
+
+* optparse
+	
 ```python
 a = [1,2,3,4,5]
 random.choice(a)
@@ -48,6 +51,10 @@ random.choices(b, k=3)
 
 * when you defined a function in a class named `__build_network`, that means it is a private method of class, the other modules could not access, for example: ...
 
+* `with open('file_path') as :`
+	* 'a': open and add the things following the end
+	* 'w': overwrite
+
 ## Class
 ```python
 class Persion:
@@ -64,3 +71,12 @@ class Puple_Super(Persion):
         super().__init__(name)
 ```
 * `super().__init__()`: it was used to inherit the class `Persion` and init the `self.name`
+
+## read xml file
+```python
+	import xml.etree.ElementTree as ET
+    tree = ET.parse(annotation_path + image_annotation_name[i])
+    root = tree.getroot()
+```
+* `for child in root.iter('object'):`, `child.find('name').text`, `child.tag` and `child.text`
+
