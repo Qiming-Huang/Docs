@@ -73,6 +73,11 @@ Record commands
 		* highlight search: in the command mode, `:set hlsearch`
 		* search ignoring case-sensitive: `:set ignorecase`
 
+* sftp
+	* easily used for transfer files to the remote service
+	* `sftp root@192.168.1.1` to connect
+	* `ls` list the file on the remote service, `lls` list the file on the local, lls (local ls)
+
 
 
 
