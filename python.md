@@ -54,6 +54,7 @@ random.choices(b, k=3)
 * `with open('file_path') as :`
 	* 'a': open and add the things following the end
 	* 'w': overwrite
+	* you can pass `encoding='utf-8'` if you want to read str in chinese
 
 ## Class
 ```python
@@ -80,3 +81,34 @@ class Puple_Super(Persion):
 ```
 * `for child in root.iter('object'):`, `child.find('name').text`, `child.tag` and `child.text`
 
+## matplotlib
+* `plt.firgure()`:
+* `plt.subplot(221)`: `2`, nrows, `2`, ncols `1`, number of subplot
+
+## opencv
+* convert to gray image: `gray = cv2.cvtColor(img_path, cv2.COLOR_BGR2GRAY)`
+* remains specified color:
+```python
+#blue
+low_hsv = np.array([100,43,46])
+high_hsv = np.array([124,255,255])
+mask = cv2.inRange(hsv,lowerb=low_hsv,upperb=high_hsv)
+```
+* Canny edge detection:
+```python
+img = cv2.GaussianBlur(mask,(3,3),0)
+canny = cv2.Canny(img, 50, 150)
+```
+* find boundingbox
+```python
+contours, hierarchy = cv2.findContours(mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+for c in contours:
+    x, y, w, h = cv2.boundingRect(c)
+    area = w * h
+    if (area > 2500):
+        if max(w, h) / min(w, h) < 2:
+            boundingBoxlist.append([x, y, w, h])
+            imgToAdd = img[y:y + h, x:x + w]
+            testList.append(imgToAdd)
+            cv2.rectangle(img, (x, y), (x + w, y + h), (0, 0, 255), 3)
+```
