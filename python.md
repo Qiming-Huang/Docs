@@ -56,6 +56,24 @@ random.choices(b, k=3)
 	* 'w': overwrite
 	* you can pass `encoding='utf-8'` if you want to read str in chinese
 
+* yield
+```python
+def foo():
+    print('yes')
+    a = [1, 2, 3, 4, 5, 6]
+    for i in a:
+        yield i
+        print('no')
+
+g = foo()
+```
+* when a function use yield to return, `g = foo()` will execute and return nothing unless `next(g)`:
+```python
+next(g) # yes 1
+next(g) # no 2
+next(g) # no 3
+```
+
 ## Class
 ```python
 class Persion:
