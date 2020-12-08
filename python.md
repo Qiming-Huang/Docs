@@ -1,5 +1,24 @@
 #Python
 
+
+## miniconda
+* create virtual env: `conda create -n tensorflow2 python=3.6`
+* set config: for mac:
+```shell
+vim ~/.condarc
+```
+```shell
+channels:
+show_channel_urls: true
+channels:
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
+  - defaults
+allow_conda_downgrades: true
+```
+
+
 ## issues
 * `No module named 'pytest'`
 	* check the filename for example, `test_xxx.py` it will happends this problems, try to not use the file name begin with `test_`
@@ -23,6 +42,9 @@ b = [3,4,1,2,3,7]
 random.choices(b, k=3)
 # [3,3,2]
 ```
+* numpy
+	* `a = np.expand_dim(a, axis=1)` : `axis` represents the add position and add in the left hand
+
 
 ## Other usage
 
