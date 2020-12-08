@@ -2,6 +2,9 @@
 Record commands
 * quick open file with designated application: `open` 
 
+* iterm2
+	* creat new windows: `command + t` or `command + n`
+
 * ssh
 	```shell
 	The ECDSA host key for website.thomaszz4.xyz has changed,
@@ -77,6 +80,9 @@ Record commands
 	* easily used for transfer files to the remote service
 	* `sftp root@192.168.1.1` to connect
 	* `ls` list the file on the remote service, `lls` list the file on the local, lls (local ls)
+
+* tmux 
+	* `tmux new -s <session-name>`
 
 
 
