@@ -48,14 +48,6 @@ for `zsh`:
 | Parameter | Usage                               | Example                                                      |
 | --------- | ----------------------------------- | ------------------------------------------------------------ |
 | -a        | open file with specific application | open -a /Applications/Typora.app/Contents/MacOS/Typora linux.md |
-|           |                                     |                                                              |
-|           |                                     |                                                              |
-|           |                                     |                                                              |
-|           |                                     |                                                              |
-|           |                                     |                                                              |
-|           |                                     |                                                              |
-|           |                                     |                                                              |
-|           |                                     |                                                              |
 
 ### . and source and .sh file
 
@@ -74,6 +66,29 @@ for `zsh`:
 
 
 # python
+
+# iTerm2
+
+## short cut
+
+| Command             | Usage                     |
+| ------------------- | ------------------------- |
+| command + t         | open new label            |
+| command + w         | delete current label      |
+| command + enter     | full screen model         |
+| command + d         | vertially slice screen    |
+| command + shift + d | horizontally slice screen |
+| ^ + a               | switch to the line head   |
+| ^ + e               | switch to the line end    |
+| command + r         | clear screen              |
+| ^ + u               | delete curren line        |
+| shift + command + h | show all paste history    |
+
+## tricks
+
+save you paste history into disk:
+
+`	Preferences -> General -> Magic -> Save copy/paste history to disk`
 
 
 
