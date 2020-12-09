@@ -127,13 +127,12 @@ how to execute next command line only after the befor line had been finished
 
 ```shell
 #!/bin/zsh
-#automaticlly git push, there is a problem
 wait=`git add $1`
-echo "Done add"
+echo "Done git add"
 out=`git commit -m 'update'`
-echo "Done commit"
+echo "Done git commit"
 result=`git push`
-echo "Deon push"
+echo "Done git push"
 ```
 
 
