@@ -1,4 +1,10 @@
 # Linux
+
+
+## shell
+* update
+
+
 Record commands
 * quick open file with designated application: `open` 
 
