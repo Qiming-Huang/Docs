@@ -1,0 +1,17 @@
+# git 
+
+```shell
+fatal: unable to access 'https://github.com/Thomaszz4/Shell.git/': Couldn't connect to server
+```
+
+SOLOTION: change `https` to `git`  but can not push this repo
+
+```shell
+You can't push to git://github.com/Thomaszz4/Shell.git
+Use https://github.com/Thomaszz4/Shell.git
+```
+
+SOLUTION: using `git clone https://github.com/Thomaszz4/Shell.git`
+
+
+
