@@ -39,8 +39,6 @@ for `zsh`:
    # Shell Script END
    ```
 
-   
-
 ## commands
 
 ### open
@@ -121,7 +119,24 @@ save you paste history into disk:
 
 `	Preferences -> General -> Magic -> Save copy/paste history to disk`
 
-asdadad
+# Shell
+
+## automatically git push
+
+how to execute next command line only after the befor line had been finished
+
+```shell
+#!/bin/zsh
+#automaticlly git push, there is a problem
+wait=`git add $1`
+echo "Done add"
+out=`git commit -m 'update'`
+echo "Done commit"
+result=`git push`
+echo "Deon push"
+```
+
+
 
 
 
