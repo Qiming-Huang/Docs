@@ -67,6 +67,37 @@ for `zsh`:
 
 # python
 
+## tricks
+
+reverse traversal
+
+```python
+a = [1,2,3,4,5]
+for i in range(len(a)-1, -1, -1):
+  print(a[i])
+"""
+5
+4
+3
+2
+1
+"""
+```
+
+
+
+## numpy
+
+np.delect(a, index)
+
+```python
+a = [1,2,3,4,5,6]
+np.delect(a, 0) # [2,3,4,5,6]
+np.delect(a, [2,3]) # [1,2,5,6]
+```
+
+
+
 # iTerm2
 
 ## short cut
