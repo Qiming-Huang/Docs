@@ -1,3 +1,2 @@
-# Just for record
-## [python](https://github.com/Thomaszz4/Docs/blob/master/python.md)
-## [linux](https://github.com/Thomaszz4/Docs/blob/master/linux.md)
+# [reference](https://github.com/Thomaszz4/Docs/blob/master/reference.md)
+contains linux, python
