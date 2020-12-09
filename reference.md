@@ -121,5 +121,7 @@ save you paste history into disk:
 
 `	Preferences -> General -> Magic -> Save copy/paste history to disk`
 
+asdadad
+
 
 
