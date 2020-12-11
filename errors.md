@@ -13,5 +13,11 @@ Use https://github.com/Thomaszz4/Shell.git
 
 SOLUTION: using `git clone https://github.com/Thomaszz4/Shell.git`
 
+```shell
+error: failed to push some refs to 'https://github.com/xxxx.git'
+```
+
+SOLOTION: the remote repo changed, `git pull` first then `git push` again
+
 
 
