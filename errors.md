@@ -19,5 +19,15 @@ error: failed to push some refs to 'https://github.com/xxxx.git'
 
 SOLOTION: the remote repo changed, `git pull` first then `git push` again
 
+# zsh
+
+```shell
+Insecure completion-dependent directories detected
+```
+
+SOLUTION: that is because some of the file lack of authority, `chmod 775 xx/xx`
+
+
+
 
 
