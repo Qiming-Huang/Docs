@@ -304,4 +304,99 @@ CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build main.go
 
    
 
-3. 
+3. Const
+
+   ```go
+   const i = 67
+   //const con not change
+   
+   //you can use this
+   package main
+   
+   import "fmt"
+   
+   const i int = 67
+   
+   func main() {
+   	const i = 45
+   	test()
+   	fmt.Print(i)
+   
+   }
+   
+   func test()  {
+   	fmt.Printf("%v\n", i)
+   }
+   
+   //iota
+   const(
+   	a = iota
+   	b = iota
+   	c = iota
+     //or
+     //a = iota
+     //b
+     //c
+   )
+   
+   func main() {
+   	fmt.Printf("%v\n", a)
+   	fmt.Printf("%v\n", b)
+   	fmt.Printf("%v\n", c)
+   }
+   //0, 1, 2
+   
+   const(
+   	a = iota
+   	b = iota
+   )
+   
+   const(
+   	a2 = iota
+   )
+   
+   func main() {
+   	fmt.Printf("%v\n", a)
+   	fmt.Printf("%v\n", b)
+   	fmt.Printf("%v\n", a2)
+   }
+   //0, 1, 0 iota only works on a block of const
+   ```
+
+4. array
+
+   ```go
+   //create
+   func main() {
+   
+   	grades := [3]int{1, 2, 3}
+   	fmt.Printf("%v\n", grades)
+   	
+   }
+   //or 
+   func main() {
+   
+   	a := [...]int{1,2,3}
+   	b := &a
+   	b[2] = 2
+   	fmt.Printf("%v\n %v\n", a, b)
+   
+   }
+   // [1,2,2] [1,2,2]
+   
+   // or
+   a := make([]int, 3)
+   a[0] = 1
+   fmt.Println(a)
+   
+   //slice
+   a := []int{1,2,3,4,5,6,7,8,9,10}
+   fmt.Printf("%v\n", a[:])
+   fmt.Printf("%v\n", a[2:6])
+   fmt.Printf("%v\n", a[:6])
+   
+   ```
+
+   
+
+5. 
