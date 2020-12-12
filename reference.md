@@ -30,7 +30,8 @@
     source ~/.zshrc
    ```
 
-   
+
+5. `! export` : next time commands begin with export
 
 ## Add environment path
 
@@ -242,7 +243,65 @@ result=`git push`
 echo "Done git push"
 ```
 
+# GO
+
+## multiple platforms compiled 
+
+```go
+// linux
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build main.go
+//windows
+CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build main.go
+```
 
 
 
+## Usage
 
+1. variable
+
+   ```go
+   // three types to use variables
+   // 1
+   func main()  {
+   	var i int
+     i = 20
+   	fmt.Print(i)
+   }
+   // 2
+   func main()  {
+     i := 20
+   	fmt.Print(i)
+   }
+   // 3
+   func main()  {
+     var i int = 20
+   }
+   // also you can 
+   var (
+   	i int = 2
+   	s string = "hello"
+   )
+   ```
+
+2. Variable type
+
+   ```go
+   func main()  {
+     i := 20
+   	fmt.Printf("%v, %T", i, i)
+   }
+   // 20, int
+   ```
+
+   ```go
+   //global definition
+   var i int = 2
+   func main() {
+     fmt.Print(i)
+   }
+   ```
+
+   
+
+3. 
