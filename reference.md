@@ -1,4 +1,4 @@
-# Linux
+> # linux
 
 ## Usages
 
@@ -243,6 +243,49 @@ result=`git push`
 echo "Done git push"
 ```
 
+# Markdown
+
+## Uages
+
+bold: `**bold**`
+
+Italic: `*italic*`
+
+bold and italic: `***bold and italic***`
+
+Block quotes: `> block quotes`
+
+Order list:
+
+```markdown
+1.
+2.
+3.
+```
+
+Unorderd lists:
+
+```markdown
+-
+*
+```
+
+Images: `![name](path)`
+
+Horizontal Rule: `***`
+
+Links: `[display](links)` or `<www.baidu.com>`
+
+Display a literal character: `/*`
+
+Tables: `|a|b|c|`
+
+Foodnote: `[^1]`
+
+Strikethrough: `~~flat~~`
+
+Task list: `- []`
+
 # GO
 
 ## multiple platforms compiled 
@@ -399,4 +442,5 @@ CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build main.go
 
    
 
-5. 
+5. a
+
