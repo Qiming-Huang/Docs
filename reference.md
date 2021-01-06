@@ -1,4 +1,4 @@
-> # linux
+# linux
 
 ## Usages
 
@@ -32,6 +32,16 @@
 
 
 5. `! export` : next time commands begin with export
+
+6. `lsof -i:80`: to check what process occupies this port, use `kill PID` to stop this process
+
+   ```shell
+   COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+   nginx   1041 root   11u  IPv4  20043      0t0  TCP *:http (LISTEN)
+   nginx   2299  www   11u  IPv4  20043      0t0  TCP *:http (LISTEN)
+   ```
+
+7. 
 
 ## Add environment path
 
@@ -285,6 +295,20 @@ Foodnote: `[^1]`
 Strikethrough: `~~flat~~`
 
 Task list: `- []`
+
+color text: `$\color{#FF3030}{red}$`
+
+# Nginx
+
+install nginx for ubuntu I am not sure if we could just using `sudo apt-get install nginx`, because according to the Official website, there are some pre operations, as follows:
+
+```shell
+sudo apt install curl gnupg2 ca-certificates lsb-release
+curl -fsSL https://nginx.org/keys/nginx_signing.key | sudo apt-key add -
+sudo apt-key fingerprint ABF5BD827BD9BF62
+sudo apt update
+sudo apt install nginx
+```
 
 # GO
 
