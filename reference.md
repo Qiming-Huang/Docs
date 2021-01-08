@@ -277,6 +277,13 @@ np.argmax(a, axis=0) # -> array([0, 0, 0, 2, 0])
 np.argmax(a, axis=1) # -> array([0, 0, 3])
 ```
 
+np.random.choice()
+
+```python
+np.random.choice(100)
+# 77
+```
+
 
 
 ## flask
@@ -326,6 +333,12 @@ def comment():
     return "提交成功咯"
 ```
 
+get ip
+
+```python
+ip = request.remote_addr
+```
+
 
 
 ## os
@@ -358,6 +371,120 @@ plt.show()
 `plt.save(img)` : save the array image
 
 # Web
+
+## html and css
+
+checkbox: set `disable='true'` to stop click the check box
+
+```html
+<input type='checkbox' check disable='true'>
+```
+
+## javascripts
+
+`onclick`, function and `prompt`
+
+```html
+<p onclick='check()'>
+  click me!
+</p>
+<script>
+  function check() {
+    var access = prompt('please input access: ')
+    if (access = 'woshiniuniu') {
+      window.location.href="b.html";
+    }
+    else {
+      alert('Wrong access, sorry!')
+    }
+  }
+</script>
+```
+
+`document.getElementById()`： 返回一个对象，可以调用方法, there are other methods, `mainTwo` 是动态的集合（创建的时候没有，但是随着代码从上往下执行，碰到新的div会动态更新）
+
+```html
+<script>
+  var main = document.getElementById('main')
+  var mainTwo = document.getElementsByTagName('div')
+  for (var i = 0; i < mainTwo.length; i++) {
+  	console.log(mainTwo[i])
+  }
+  alert(main.textContent)
+
+</script>
+
+    <div>123</div>
+    <script>
+        var mainTwo = document.getElementsByTagName('div')
+        console.log(mainTwo.length)
+    </script>
+    <div>456</div>
+    <script>
+        console.log(mainTwo.length)
+</script>
+
+<div id="main">
+    <p>123</p>
+    <p>456</p>
+</div>
+<script>
+    var divs = document.getElementById('main')
+    var ps = divs.getElementsByTagName('p')
+</script>
+```
+
+注册事件, 更改属性的值，通过`img.src`， note: the class uses img.className, `this.src` == `img.src`
+
+```html
+    <img src="http://image.thomaszz4.cn/me.gif" id="img">
+    <script>
+        var btn = document.getElementById('img')
+        btn.onclick = function() {
+            alert('this is a iamge');
+          	//img.src = "http://image.thomaszz4.cn/niuniu_2.JPG"
+          	this.src = "http://image.thomaszz4.cn/niuniu_2.JPG"
+        }
+    </script>
+```
+
+`innerHTML` and `innerText`
+
+```html
+    <script>
+        var change = document.getElementById('change')
+        change.innerText = '<p>add a p</p>'
+        change.innerHTML = '<p>add a p</p>'
+    </script>
+```
+
+`onfocus` and `onblur`
+
+```html
+<script>
+          text.onfocus = function() {
+            this.style.backgroundColor = '#668B8B'
+        }
+        text.onblur = function() {
+            this.style.backgroundColor = '#663B8B'
+        }
+</script>
+```
+
+操作自定义属性, `getAttribute`, `setAttribute` and `removeAttribute`
+
+```html
+    <p person='one' id="test">hello</p>
+    <script>
+        var people = document.getElementById('test')
+        alert(people.getAttribute('person'))
+        console.log(people.getAttribute('person'))
+        people.setAttribute('sex', 'male')
+        people.removeAttribute('person')
+    </script>
+```
+
+
 
 ## bootstrap
 
